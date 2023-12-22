@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Currency-Translater</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container justify-content-center">
+            <a href="" class="navbar-brand">Currency-Translater</a>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency_one" list="list_one" placeholder="Currency">
+                    <datalist id="list_one"></datalist>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency_two" list="list_two" placeholder="Currency">
+                    <datalist id="list_two"></datalist>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="amount" placeholder="Amount">
+                </div>
+                <button class="btn btn-outline-primary mb-3 w-100" id="calculate">Calculate</button>
+                <div id="result">
+                    <!-- <div class="card border-primary">
+                        <div class="card-body text-center" style="font-size:30px;">100 $=1745 TL</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
